@@ -65,7 +65,7 @@ void parse_args(int argc, char **argv)
         port = atoi(optarg);
         break;
       case 'i':
-        ip = malloc(strlen(optarg));
+        ip = malloc(strlen(optarg)+ 1);
         strcpy(ip, optarg);
         break;
       case '?':
